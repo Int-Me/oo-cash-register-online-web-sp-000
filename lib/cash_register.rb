@@ -10,6 +10,7 @@ class CashRegister
   def add_item(item, price, amount = 1)
     @price = price
     @total += price * amount
+    @
     i = 0
     for i in 1..amount do
       @items << item
@@ -29,6 +30,6 @@ class CashRegister
   end
 
   def void_last_transaction
-    @total -= @price unless @total == 0
+    @total -= @price until @items == nil
   end
 end
