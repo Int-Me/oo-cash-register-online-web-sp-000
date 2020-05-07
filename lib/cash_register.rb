@@ -11,7 +11,7 @@ class CashRegister
     @price = price
     @total += price * amount
     i = 0
-    for i <= amount do
+    for i in 1..amount do
       @items << item
       i += 1
     end
